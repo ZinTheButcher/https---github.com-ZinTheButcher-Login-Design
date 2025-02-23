@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Theme Website Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="loading.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lilita One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family='Source Serif Pro'"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">⭐ YOUR CHOICE</div>
+      <!-- Need to change logo -->
+
+      <!--Search Bar Section-->
+      <div class="search-bar">
+        <input type="text" placeholder="Search templates...." />
+        <a href="#"><i class="fas fa-search"></i></a>
+      </div>
+      <!--Search Bar Section-->
+
+      <div class="nav-buttons">
+        <a href="" class="nav-btn">Home </a>   
+
+        <!-- Dropdown for Category -->
+        <div class="dropdown">
+          <button class="nav-btn" id="category-btn">Category</button>
+          <div class="dropdown-content" id="category-dropdown">
+            <a href="#">CV Templates</a>
+            <a href="#">Resume Templates</a>
+            <a href="#">PPT Templates</a>
+            <a href="#">PPT Templates</a>
+            <a href="#">PPT Templates</a>
+          </div>
+        </div>
+        <a href="StartPAge/startpage.html" class="nav-btn">About</a>
+        <a href="" class="nav-btn">Contact</a>
+
+        <!-- User Icon with Dropdown -->
+        <div class="dropdown">
+          <i
+            id="user-btn"
+            class="fas fa-user user-icon"
+          ></i>
+          <div class="dropdown-content" id="user-dropdown">
+            <p id="username-display">Username</p>
+            <!-- Placeholder for username -->
+            <a href="#" onclick="showForm('login')"
+              ><i class="fas fa-sign-in-alt"></i> Log In</a
+            >
+            <a href="#" onclick="showForm('signup')"
+              ><i class="fas fa-user-plus"></i> Sign Up</a
+            >
+            <a href="#" id="logout" ><i class="fas fa-sign-out-alt" ></i> Log Out</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="template-section">
+        <h2>Our Templates</h2>
+        <div class="template-grid">
+          <div class="template-box">Template</div>
+          <div class="template-box">Template</div>
+          <div class="template-box">Template</div>
+          <div class="template-box">Template</div>
+          <div class="template-box">Template</div>
+        </div>
+        <p class="more-link">See More Templates →</p>
+      </section>
+
+      <!--Template Section-->
+      <section class="template-section">
+        <h2>Business Templates</h2>
+        <div class="template-grid">
+          <div class="template-box">
+            <img src="IMG/Business/Business_1.png" alt="Template 1">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Business/Business_2.png" alt="Template 2">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Business/Business_3.png" alt="Template 3">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Business/Business_4.png" alt="Template 4">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Business/Business_5.png" alt="Template 5">
+          </div>
+        </div>
+        <p class="more-link">See More Templates →</p>
+      </section>
+
+      <section class="template-section">
+        <h2>Creative Portfolio Templates</h2>
+        <div class="template-grid">
+          <div class="template-box">
+            <img src="IMG/Creative_template/Creative_1.jpg" alt="Template 1">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Creative_template/Creative_2.jpg" alt="Template 2">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Creative_template/Creative_3.png" alt="Template 3">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Creative_template/Creative_4.png" alt="Template 4">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Creative_template/Creative_5.png" alt="Template 5">
+          </div>
+        </div>
+        <p class="more-link">See More Templates →</p>
+      </section>
+
+      <section class="template-section">
+        <h2>Freelancer Resumes</h2>
+        <div class="template-grid">
+          <div class="template-box">
+            <img src="IMG/Freelance/Freelance_1.jpg" alt="Template 1">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Freelance/Freelance_2.jpg" alt="Template 2">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Freelance/Freelance_3.jpg" alt="Template 3">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Freelance/Freelance_4.jpg" alt="Template 4">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Freelance/Freelance_5.jpg" alt="Template 5">
+          </div>
+        </div>
+        <p class="more-link">See More Templates →</p>
+      </section>
+
+      <section class="template-section">
+        <h2>Minimalistic Templates</h2>
+        <div class="template-grid">
+          <div class="template-box">
+            <img src="IMG/Minimalistic/Minimalistic_1.jpg" alt="Template 1">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Minimalistic/Minimalistic_2.jpg" alt="Template 2">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Minimalistic/Minimalistic_3.jpg" alt="Template 3">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Minimalistic/Minimalistic_4.jpg" alt="Template 4">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Minimalistic/Minimalistic_5.jpg" alt="Template 5">
+          </div>
+        </div>
+        <p class="more-link">See More Templates →</p>
+      </section>
+
+      <section class="template-section">
+        <h2>Modern CV Form</h2>
+        <div class="template-grid">
+          <div class="template-box">
+            <img src="IMG/Modern_CV/Modern_1.png" alt="Template 1">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Modern_CV/Modern_2.png" alt="Template 2">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Modern_CV/Modern_3.png" alt="Template 3">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Modern_CV/Modern_4.png" alt="Template 4">
+          </div>
+          <div class="template-box">
+            <img src="IMG/Modern_CV/Modern_5.png" alt="Template 5">
+          </div>
+        </div>
+        <p class="more-link">See More Templates →</p>
+      </section>
+      <!--Template Section-->
+    </main>
+
+    <!-- Image Zoom Modal -->
+    <div id="image-modal" class="image-modal hidden">
+      <div class="image-modal-content">
+        <span class="close-modal" onclick="closeImageModal()">&times;</span>
+        <img id="modal-image" src="" alt="Template Image" />
+        <button id="download-button" onclick="downloadImage()">Download</button>
+      </div>
+    </div>
+
+    <!-- Login/Sign-up -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+      <div class="login-container">
+        <span id="close-modal" onclick="closeModal()">&#10005;</span>
+        <h2 id="form-title">Login</h2>
+
+        <!-- Login -->
+        <form id="loginForm">
+          <label for="login-username">Username:</label>
+          <input type="text" id="login-username" name="username" required />
+          <label for="login-password">Password:</label>
+          <input type="password" id="login-password" name="password" required />
+          <!-- see password -->
+          <span class="eye1" onclick="showPassword(this)">
+            <i class="fa fa-eye visible"></i>
+            <i class="fa fa-eye-slash hidden"></i>
+          </span>
+          <!-- see password -->
+          <button type="submit">Login</button>
+          <div id="login-error-message" class="error-message"></div>
+        </form>
+
+        <!-- Sign-Up Form -->
+        <form id="signUpForm" class="hidden">
+          <label for="signup-username">Username:</label>
+          <input
+            type="text"
+            id="signup-username"
+            name="signup-username"
+            required
+          />
+          <label for="signup-password">Password:</label>
+          <input
+            type="password"
+            id="signup-password"
+            name="signup-password"
+            required
+          />
+          <!-- see password -->
+          <span class="eye2" onclick="showPassword(this)">
+            <i class="fa fa-eye visible"></i>
+            <i class="fa fa-eye-slash hidden"></i>
+          </span>
+          <!-- see password -->
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+          <!-- see password -->
+          <span class="eye3" onclick="showPassword(this)">
+            <i class="fa fa-eye visible"></i>
+            <i class="fa fa-eye-slash hidden"></i>
+          </span>
+          <!-- see password -->
+          <button type="submit">Sign Up</button>
+          <div id="signup-error-message" class="error-message"><p></p></div>
+        </form>
+
+        <!-- Toggle/Transition -->
+        <p id="toggle-form">
+          Don't have an account?
+          <a href="javascript:void(0);" onclick="showForm('signup')">Sign Up</a>
+        </p>
+        <!-- Close Button -->
+        <span id="close-modal" onclick="closeModal()">&#10005;</span>
+      </div>
+    </div>
+    <div class="loading-modal">
+      <div class="loading-screen"></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
